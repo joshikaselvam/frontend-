@@ -9,22 +9,37 @@
     border-radius: 2px;
     cursor: pointer;
     margin-right: 10px;
+    transition: opacity 0.15s;
+  }
+  .subs-button:hover{
+    opacity:0.8;
   }
   .join-button{
     background-color: white;
     border-color: rgb(32, 6, 179);
     border-style:solid;
     border-width: 1px;
-    color:rgb(32, 6, 179);
+    color:rgb(21, 100, 190);
     height: 36px;
     width: 68px;
     border-radius: 9px;
     cursor: pointer;
+    transition: background-color 1s,
+    color 1s;
     
     
     } 
+
+    .join-button:hover{
+      background-color: rgb(32, 6, 179); 
+      color:white;
+
+    }
+    .join-button:active{
+      opacity:0.7;
+    }
     .tweet-button{
-    background-color:rgb(2, 108, 238) ;
+    background-color:rgb(15, 107, 214) ;
     color:white;
     border:none;
     height:36px;
@@ -34,12 +49,40 @@
     font-size:15px;
     cursor: pointer;
     margin-left:8px;
+    transition:box-shadow 0.16s;
+  
+
+
 
 
 
 
     } 
+    .tweet-button:hover{
+      box-shadow:4px 4px 10px rgba(0,0,0,0.15);
+
+
+    }
+  .add-button{
+    background-color: rgb(227, 196, 20);
+    color:black;
+    border:none;
+    height:36px;
+    width: 74px;
+    border-radius:90px;
+    font-weight:bold;
+    cursor:pointer;
+    transition: opacity 1s;
+  }
+    .add-button:hover{
+    opacity:0.8;
+
+  }
+    .add-button:active{
+    opacity: 0.7;
+  }
 </style>
 <button class="subs-button">subscribe</button>
 <button class="join-button">join</button>
 <button class="tweet-button">tweet</button>
+<button class="add-button">add to cart</button>
